@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ModMetaData>
+  <name>Lulu's Growing Tweaks</name>
+  <author>LoonyLadle</author>
+  <url>https://github.com/LoonyLadle/LuluGrowTweaks</url>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+  <description>Tweaks and expands vanilla growing options.</description>
+</ModMetaData>
