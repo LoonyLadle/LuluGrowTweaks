@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Defs>
-  <ThoughtDef>
-    <defName>LuluGrowTweaks_AteRawBerries</defName>
-    <durationDays>1</durationDays>
-    <stages>
-      <li>
-        <label>ate raw berries</label>
-        <description>I ate fresh, delicious berries. Yum!</description>
-        <baseMoodEffect>2</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<ThoughtDef>
+		<defName>LuluGrowTweaks_AteRawBerries</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate raw berries</label>
+				<description>I ate fresh, delicious berries. Yum!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

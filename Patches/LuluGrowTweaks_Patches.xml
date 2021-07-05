@@ -1,119 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <operations>
-      <!-- Begin patch RawBerries -->
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "RawBerries"]/statBases</xpath>
-        <value>
-          <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
-        </value>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "RawBerries"]/ingestible/tasteThought</xpath>
-        <value>
-          <tasteThought>LuluGrowTweaks_AteRawBerries</tasteThought>
-        </value>
-      </li>
-      <!-- Begin patch Plant_Strawberry -->
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Plant_Strawberry"]/plant/growDays</xpath>
-        <value>
-          <growDays>6.0</growDays>
-        </value>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Plant_TreeCocoa"]/plant/growDays</xpath>
-        <value>
-          <growDays>20.8</growDays>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "Plant_Strawberry" or defName = "Plant_TreeCocoa"]/plant</xpath>
-        <value>
-          <harvestAfterGrowth>0.30</harvestAfterGrowth>
-        </value>
-      </li>
-      <!-- Begin patch Glowstool -->
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Glowstool"]/plant/fertilityMin</xpath>
-        <value>
-          <fertilityMin>0.7</fertilityMin>
-        </value>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Glowstool"]/plant/growDays</xpath>
-        <value>
-          <growDays>11.6</growDays>
-        </value>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Glowstool"]/statBases/Beauty</xpath>
-        <value>
-          <Beauty>-6</Beauty>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "Glowstool"]/plant</xpath>
-        <value>
-          <sowMinSkill>8</sowMinSkill>
-          <sowTags>
-            <li>Ground</li>
-            <li>Hydroponic</li>
-          </sowTags>
-        </value>
-      </li>
-      <!-- Begin patch Agarilux -->
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Agarilux"]/plant/growDays</xpath>
-        <value>
-          <growDays>6</growDays>
-        </value>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Agarilux"]/statBases/Beauty</xpath>
-        <value>
-          <Beauty>50</Beauty>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "Agarilux"]/plant</xpath>
-        <value>
-          <harvestAfterGrowth>0.30</harvestAfterGrowth>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "Agarilux"]/plant</xpath>
-        <value>
-          <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
-        </value>
-      </li>
-      <!-- Begin patch Plant_Agave -->
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/growDays</xpath>
-        <value>
-          <growDays>7.4</growDays>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant</xpath>
-        <value>
-          <sowMinSkill>5</sowMinSkill>
-          <sowTags>
-            <li>Ground</li>
-            <li>Hydroponic</li>
-          </sowTags>
-        </value>
-      </li>
-      <!-- Begin patch Plant_Brambles -->
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "Plant_Brambles"]/plant</xpath>
-        <value>
-          <sowTags>
-            <li>Ground</li>
-          </sowTags>
-        </value>
-      </li>
-    </operations>
-  </Operation>
+	<!-- Begin patch RawBerries -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RawBerries"]/statBases</xpath>
+		<value>
+			<FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RawBerries"]/ingestible/tasteThought</xpath>
+		<value>
+			<tasteThought>LuluGrowTweaks_AteRawBerries</tasteThought>
+		</value>
+	</Operation>
+	<!-- Begin patch Plant_Strawberry -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/growDays</xpath>
+		<value>
+			<growDays>6.0</growDays>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]/plant/growDays</xpath>
+		<value>
+			<growDays>20.8</growDays>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Strawberry" or defName="Plant_TreeCocoa"]/plant</xpath>
+		<value>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+		</value>
+	</Operation>
+	<!-- Begin patch Glowstool -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Glowstool"]/plant/fertilityMin</xpath>
+		<value>
+			<fertilityMin>0.7</fertilityMin>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Glowstool"]/plant/growDays</xpath>
+		<value>
+			<growDays>11.6</growDays>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Glowstool"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>-6</Beauty>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Glowstool"]/plant</xpath>
+		<value>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+		</value>
+	</Operation>
+	<!-- Begin patch Agarilux -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Agarilux"]/plant/growDays</xpath>
+		<value>
+			<growDays>6</growDays>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Agarilux"]/statBases/Beauty</xpath>
+		<value>
+			<Beauty>50</Beauty>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Agarilux"]/plant</xpath>
+		<value>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Agarilux"]/plant</xpath>
+		<value>
+			<lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+		</value>
+	</Operation>
+	<!-- Begin patch Plant_Agave -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Agave"]/plant/growDays</xpath>
+		<value>
+			<growDays>7.4</growDays>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+		<value>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+		</value>
+	</Operation>
+	<!-- Begin patch Plant_Brambles -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Brambles"]/plant</xpath>
+		<value>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+		</value>
+	</Operation>
 </Patch>
